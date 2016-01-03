@@ -1,0 +1,41 @@
+[
+  {
+    "name" : "Staff1",
+    "birthYear" : 1990,
+    "position" : "SE",
+    "salary" : 1500,
+    "skills" : [ "java", "python" ]
+  },
+
+  {
+    "name" : "Staff2",
+    "birthYear" : 1981,
+    "position" : "SSE",
+    "salary" : 2500,
+    "skills" : [ "java", "php" ]
+  },
+
+  {
+    "name" : "Staff3",
+    "birthYear" : 1987,
+    "position" : "SSE",
+    "salary" : 3800,
+    "skills" : [ "java", "css" ]
+  },
+
+  {
+    "name" : "Staff4",
+    "birthYear" : 1978,
+    "position" : "SA",
+    "salary" : 7500,
+    "skills" : [ "java", "sql" ]
+  },
+
+  {
+    "name" : "Staff5",
+    "birthYear" : 1983,
+    "position" : "SSE",
+    "salary" : 4500,
+    "skills" : [ ".net", "javascript" ]
+  }
+]
