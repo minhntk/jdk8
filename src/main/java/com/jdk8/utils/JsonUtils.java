@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class JsonUtils {
 
-    private final static String FILE_NAME = "D:\\JavaSources\\jdk8\\src\\main\\resources\\Staff.json";
+    private final static String FILE_NAME = "D:\\Research\\jdk8\\src\\main\\resources\\Staff.json";
 
     public List<Staff> getAllStaffs() {
         try {
