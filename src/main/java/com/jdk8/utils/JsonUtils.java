@@ -15,7 +15,7 @@ public class JsonUtils {
 
     private final static String FILE_NAME = "D:\\Research\\jdk8\\src\\main\\resources\\Staff.json";
 
-    public List<Staff> getAllStaffs() {
+    public static List<Staff> getAllStaffs() {
         try {
             ObjectMapper mapper = new ObjectMapper();
             List<Staff> staffs = mapper.readValue(new File(FILE_NAME),
