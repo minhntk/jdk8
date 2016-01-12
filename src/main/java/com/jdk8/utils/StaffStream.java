@@ -9,16 +9,16 @@ import java.util.List;
 /**
  * Created by Hi on 1/11/2016.
  */
-public class StaffStream {
+public class StaffStream<T> {
 
-    private List<Staff> staffs;
+    private List<T> staffs;
 
-    public StaffStream(List<Staff> staffs){
+    public StaffStream(List<T> staffs){
         this.staffs = staffs;
     }
-    public List<Staff> filter(FilterService<Staff>  filter) {
-        for(Iterator<Staff> iter = staffs.listIterator(); iter.hasNext(); ) {
-            Staff staff = iter.next();
+    public List<T> filter(FilterService<T>  filter) {
+        for(Iterator<T> iter = staffs.listIterator(); iter.hasNext(); ) {
+            T staff = iter.next();
             if (!filter.test(staff)) {
                 iter.remove();
             }
