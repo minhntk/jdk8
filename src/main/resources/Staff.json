@@ -4,7 +4,11 @@
     "birthYear" : 1990,
     "position" : "SE",
     "salary" : 1500,
-    "skills" : [ "java", "python" ]
+    "skills" : [ "java", "python" ],
+    "project" : {
+      "id" : "QAS",
+      "name": "QASymphony"
+    }
   },
 
   {
@@ -12,7 +16,11 @@
     "birthYear" : 1981,
     "position" : "SSE",
     "salary" : 2500,
-    "skills" : [ "java", "php" ]
+    "skills" : [ "java", "php" ],
+    "project" : {
+      "id" : "GW",
+      "name": "Government Windows"
+    }
   },
 
   {
@@ -20,7 +28,11 @@
     "birthYear" : 1987,
     "position" : "SSE",
     "salary" : 3800,
-    "skills" : [ "java", "css" ]
+    "skills" : [ "java", "css" ],
+    "project" : {
+      "id" : "SC",
+      "name": "Sharecare"
+    }
   },
 
   {
@@ -28,7 +40,11 @@
     "birthYear" : 1978,
     "position" : "SA",
     "salary" : 7500,
-    "skills" : [ "java", "sql" ]
+    "skills" : [ "java", "sql" ],
+    "project" : {
+      "id" : "SC",
+      "name": "Sharecare"
+    }
   },
 
   {
@@ -36,6 +52,10 @@
     "birthYear" : 1983,
     "position" : "SSE",
     "salary" : 4500,
-    "skills" : [ ".net", "javascript" ]
+    "skills" : [ ".net", "javascript" ],
+    "project" : {
+      "id" : "NP",
+      "name": "New Project"
+    }
   }
 ]

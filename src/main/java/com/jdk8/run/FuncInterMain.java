@@ -15,11 +15,18 @@ public class FuncInterMain {
         List<Staff> staffList =  JsonUtils.getAllStaffs();
 
         System.out.println("**** Lambda Expression ******");
-        List<Staff> filterStaff = new StaffStream<Staff>(staffList)
+        /*List<Staff> filterStaff = new StaffStream<Staff>(staffList)
                                         .filter((d) -> d.getSkills().contains("java")
-                                                        && d.getPosition().equals("SSE"));
-        for (Staff staff: filterStaff) {
-            System.out.println(staff.getFullName());
+                                                        && d.getPosition().equals("SSE"))
+                                        ;*/
+        List<Staff> sortStaff = new StaffStream<Staff>(staffList)
+                                        .sort((f1, f2) -> Long.compare(f1.getAge(), f2.getAge()));
+        for (Staff staff: sortStaff) {
+            System.out.println("Staff:");
+            System.out.println("Name:" + staff.getFullName());
+            System.out.println("Age:" + staff.getAge());
+            System.out.println("Project:" + staff.getProject().getProjectName());
+            System.out.println("#####");
         }
         System.out.println("*************************");
         System.out.println("");

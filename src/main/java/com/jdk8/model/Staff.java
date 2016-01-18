@@ -15,17 +15,20 @@ public class Staff {
     private int salary;
     private String position;
     private List<String> skills;
+    private final Project project;
 
     private Staff(@JsonProperty("name") String name,
                   @JsonProperty("birthYear") int age,
                   @JsonProperty("salary") int salary,
                   @JsonProperty("position") String position,
-                  @JsonProperty("skills")List<String> skills) {
+                  @JsonProperty("skills")List<String> skills,
+                  @JsonProperty("project")Project project) {
         this.fullName = name;
         this.age = age;
         this.salary = salary;
         this.position = position;
         this.skills = skills;
+        this.project = project;
     }
 
     public String getFullName() {
@@ -46,5 +49,9 @@ public class Staff {
 
     public List<String> getSkills() {
         return skills;
+    }
+
+    public Project getProject() {
+        return project;
     }
 }
