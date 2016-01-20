@@ -1,0 +1,12 @@
+[
+  {
+    "id": "SC",
+    "name" : "Sharecare",
+    "customer": {
+      "name": "Sharecare",
+      "industry": "Healthcare",
+      "address": "1 NewYork, USA"
+    }
+
+  }
+]

@@ -1,5 +1,6 @@
 [
   {
+    "id": "stff001",
     "name" : "Staff1",
     "birthYear" : 1990,
     "position" : "SE",
@@ -7,11 +8,17 @@
     "skills" : [ "java", "python" ],
     "project" : {
       "id" : "QAS",
-      "name": "QASymphony"
+      "name": "QASymphony",
+      "industry": "Automation Test",
+      "customer": {
+        "name": "QASymphony",
+        "address": "1 NewYork, USA"
+      }
     }
   },
 
   {
+    "id": "stff002",
     "name" : "Staff2",
     "birthYear" : 1981,
     "position" : "SSE",
@@ -19,11 +26,17 @@
     "skills" : [ "java", "php" ],
     "project" : {
       "id" : "GW",
-      "name": "Government Windows"
+      "name": "Government Windows",
+      "industry": "Content Relationship Management",
+      "customer": {
+        "name": "US Government",
+        "address": "2 California, USA"
+      }
     }
   },
 
   {
+    "id": "stff003",
     "name" : "Staff3",
     "birthYear" : 1987,
     "position" : "SSE",
@@ -31,11 +44,17 @@
     "skills" : [ "java", "css" ],
     "project" : {
       "id" : "SC",
-      "name": "Sharecare"
+      "name": "Sharecare",
+      "industry": "Healthcare",
+      "customer": {
+        "name": "Sharecare",
+        "address": "3 Georgia, USA"
+      }
     }
   },
 
   {
+    "id": "stff004",
     "name" : "Staff4",
     "birthYear" : 1978,
     "position" : "SA",
@@ -43,11 +62,17 @@
     "skills" : [ "java", "sql" ],
     "project" : {
       "id" : "SC",
-      "name": "Sharecare"
+      "name": "Sharecare",
+      "industry": "Healthcare",
+      "customer": {
+        "name": "Sharecare",
+        "address": "3 Georgia, USA"
+      }
     }
   },
 
   {
+    "id": "stff005",
     "name" : "Staff5",
     "birthYear" : 1983,
     "position" : "SSE",
@@ -55,7 +80,8 @@
     "skills" : [ ".net", "javascript" ],
     "project" : {
       "id" : "NP",
-      "name": "New Project"
+      "name": "New Project",
+      "industry": "internal"
     }
   }
 ]

@@ -1,5 +1,7 @@
 package com.jdk8.run;
 
+import com.jdk8.model.Customer;
+import com.jdk8.model.Project;
 import com.jdk8.model.Staff;
 import com.jdk8.utils.FilterService;
 import com.jdk8.utils.JsonUtils;
@@ -25,7 +27,7 @@ public class FuncInterMain {
             System.out.println("Staff:");
             System.out.println("Name:" + staff.getFullName());
             System.out.println("Age:" + staff.getAge());
-            System.out.println("Project:" + staff.getProject().getProjectName());
+            System.out.println("Project:" + staff.getProject().map(Project::getCustomer).map(Customer::getAddress));
             System.out.println("#####");
         }
         System.out.println("*************************");
