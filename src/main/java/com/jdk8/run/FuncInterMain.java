@@ -27,7 +27,6 @@ public class FuncInterMain {
             System.out.println("Staff:");
             System.out.println("Name:" + staff.getFullName());
             System.out.println("Age:" + staff.getAge());
-            System.out.println("Project:" + staff.getProject().map(Project::getCustomer).map(Customer::getAddress));
             System.out.println("#####");
         }
         System.out.println("*************************");

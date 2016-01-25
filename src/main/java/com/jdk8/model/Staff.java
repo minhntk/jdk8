@@ -17,9 +17,13 @@ public class Staff {
     private int salary;
     private String position;
     private List<String> skills;
-    private final Optional<Project> project;
+    private Optional<Project> project;
 
-    private Staff(@JsonProperty("id") String id,
+    public Staff() {
+        
+    }
+
+    public Staff(@JsonProperty("id") String id,
                   @JsonProperty("name") String name,
                   @JsonProperty("birthYear") int age,
                   @JsonProperty("salary") int salary,
@@ -59,7 +63,7 @@ public class Staff {
         return skills;
     }
 
-    public Optional<Project>  getProject() {
+    public Optional<Project> getProject() {
         return project;
     }
 }
