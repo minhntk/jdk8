@@ -10,9 +10,11 @@ import java.util.Optional;
  */
 public class OptionalMain {
     public static void main(String[] args) {
-        Staff staff = new Staff();
+        Staff staff = new Staff(null);
         Optional<Staff> staffOptional = Optional.of(staff);
-        String name = staffOptional.flatMap(Staff::getProject).map(Project::getProjectName).orElse("UNKNOWN");
+        String name = staffOptional.flatMap(Staff::getProject)
+                                   .map(Project::getProjectName)
+                                   .orElse("UNKNOWN");
         System.out.println("Staff Name: " + name);
     }
 }

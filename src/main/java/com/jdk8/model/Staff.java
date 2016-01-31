@@ -19,8 +19,8 @@ public class Staff {
     private List<String> skills;
     private Optional<Project> project;
 
-    public Staff() {
-        
+    public Staff(Project project) {
+        this.project = Optional.ofNullable(project);
     }
 
     public Staff(@JsonProperty("id") String id,
